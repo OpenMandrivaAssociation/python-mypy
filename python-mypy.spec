@@ -38,9 +38,9 @@ rm -vrf %{buildroot}%{python3_sitelib}/mypy/{test,typeshed/tests}
 %files
 %license LICENSE
 %doc README.md
-%{python3_sitelib}/mypy
-%{python3_sitelib}/mypyc
-#{python3_sitelib}/mypy-*.egg-info
+%{python_sitelib}/mypy
+%{python_sitelib}/mypyc
+%{python_sitelib}/mypy-%{version}.dist-info/
 %{_bindir}/mypy
 %{_bindir}/mypyc
 %{_bindir}/dmypy
