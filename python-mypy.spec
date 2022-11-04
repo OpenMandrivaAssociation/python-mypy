@@ -40,11 +40,9 @@ rm -vrf %{buildroot}%{python3_sitelib}/mypy/{test,typeshed/tests}
 %doc README.md
 %{python3_sitelib}/mypy
 %{python3_sitelib}/mypyc
-%{python3_sitelib}/mypy-*.egg-info
+#{python3_sitelib}/mypy-*.egg-info
 %{_bindir}/mypy
 %{_bindir}/mypyc
 %{_bindir}/dmypy
 %{_bindir}/stubgen
 %{_bindir}/stubtest
-%{_mandir}/man1/mypy.1*
-%{_mandir}/man1/stubgen.1*
