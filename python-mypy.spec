@@ -11,6 +11,8 @@ BuildArch:      noarch
 
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
+BuildRequires:  python-wheel
+BuildRequires:  python-pip
 
 %description
 Mypy is an optional static type checker for Python.  You can add type
