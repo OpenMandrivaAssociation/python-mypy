@@ -33,7 +33,7 @@ rm -rf *.egg-info/
 rm -vrf %{buildroot}%{python3_sitelib}/mypy/{test,typeshed/tests}
 
 
-%files -n python3-mypy
+%files
 %license LICENSE
 %doc README.md
 %{python3_sitelib}/mypy
