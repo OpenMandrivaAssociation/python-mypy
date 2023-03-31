@@ -1,6 +1,6 @@
 Name:           python-mypy
 Version:        0.982
-Release:        %mkrel 1
+Release:        2
 Summary:        A static type checker for Python
 Group:          Development/Python
 License:        MIT and ASL 2.0
