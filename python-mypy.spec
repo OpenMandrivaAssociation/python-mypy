@@ -4,7 +4,7 @@
 
 Name:           python-mypy
 Version:        1.15.0
-Release:        1
+Release:        2
 Summary:        Optional static typing for Python
 Group:          Development/Python
 License:        MIT AND Python-2.0
