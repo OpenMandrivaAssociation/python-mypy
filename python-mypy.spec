@@ -36,6 +36,7 @@ BuildRequires:	python%{pyver}dist(sphinx-basic-ng)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-serializinghtml)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-htmlhelp)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-websupport)
+BuildRequires:	python%{pyver}dist(pathspec)
 %if %{with test}
 BuildRequires:  gcc-c++
 BuildRequires:	python%{pyver}dist(attrs)
