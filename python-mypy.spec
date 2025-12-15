@@ -3,8 +3,8 @@
 %bcond_with test
 
 Name:           python-mypy
-Version:        1.15.0
-Release:        2
+Version:        1.19.0
+Release:        1
 Summary:        Optional static typing for Python
 Group:          Development/Python
 License:        MIT AND Python-2.0
@@ -18,6 +18,7 @@ BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(typing-extensions)
 BuildRequires:	python%{pyver}dist(mypy-extensions)
+BuildRequires:	python%{pyver}dist(librt)
 BuildRequires:	python%{pyver}dist(orjson)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(tomli)
