@@ -33,7 +33,7 @@ BuildRequires:	python%{pyver}dist(sphinx-inline-tabs)
 BuildRequires:	python%{pyver}dist(sphinx-theme-builder)
 BuildRequires:	python%{pyver}dist(sphinx-book-theme)
 BuildRequires:	python%{pyver}dist(sphinx-basic-ng)
-BuildRequires:	python%{pyver}dist(sphinxcontrib-seralizinghtml)
+BuildRequires:	python%{pyver}dist(sphinxcontrib-serializinghtml)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-htmlhelp)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-websupport)
 %if %{with test}
