@@ -13,6 +13,7 @@ Source:         https://files.pythonhosted.org/packages/source/m/mypy/%{module}-
 BuildArch:      noarch
 
 BuildRequires:	python
+BuildRequires:	make
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
