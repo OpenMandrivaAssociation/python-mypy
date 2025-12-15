@@ -30,6 +30,12 @@ BuildRequires:	python%{pyver}dist(furo)
 BuildRequires:	python%{pyver}dist(sphinx)
 BuildRequires:	python%{pyver}dist(myst-parser)
 BuildRequires:	python%{pyver}dist(sphinx-inline-tabs)
+BuildRequires:	python%{pyver}dist(sphinx-theme-builder)
+BuildRequires:	python%{pyver}dist(sphinx-book-theme)
+BuildRequires:	python%{pyver}dist(sphinx-basic-ng)
+BuildRequires:	python%{pyver}dist(sphinxcontrib-seralizinghtml)
+BuildRequires:	python%{pyver}dist(sphinxcontrib-htmlhelp)
+BuildRequires:	python%{pyver}dist(sphinxcontrib-websupport)
 %if %{with test}
 BuildRequires:  gcc-c++
 BuildRequires:	python%{pyver}dist(attrs)
