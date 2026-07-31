@@ -3,7 +3,7 @@
 %bcond_with test
 
 Name:           python-mypy
-Version:        1.19.0
+Version:        2.3.0
 Release:        1
 Summary:        Optional static typing for Python
 Group:          Development/Python
@@ -80,7 +80,7 @@ when you attempt to run it. Mypy is a static checker, so it finds bugs in
 your programs without even running them!
 
 %prep
-%autosetup -n %{module}-%{version} -p1
+%autosetup -n mypy-2.3.0 -p1
 # drop bundled egg-info
 rm -rf *.egg-info/
 
