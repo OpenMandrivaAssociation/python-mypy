@@ -3,7 +3,7 @@
 %bcond_with test
 
 Name:           python-mypy
-Version:        2.3.0
+Version:        2.4.0
 Release:        1
 Summary:        Optional static typing for Python
 Group:          Development/Python
@@ -17,9 +17,9 @@ BuildRequires:	make
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
-BuildRequires:	python%{pyver}dist(typing-extensions)
+BuildRequires:	python%{pyver}dist(typing-extensions) >= 4.16
 BuildRequires:	python%{pyver}dist(mypy-extensions)
-BuildRequires:	python%{pyver}dist(librt)
+BuildRequires:	python%{pyver}dist(librt) >= 0.16
 BuildRequires:	python%{pyver}dist(orjson)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(tomli)
@@ -37,6 +37,8 @@ BuildRequires:	python%{pyver}dist(sphinxcontrib-serializinghtml)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-htmlhelp)
 BuildRequires:	python%{pyver}dist(sphinxcontrib-websupport)
 BuildRequires:	python%{pyver}dist(pathspec)
+# pyproject build-system.requires ast-serialize, including with --no-build-isolation.
+BuildRequires:	python%{pyver}dist(ast-serialize)
 %if %{with test}
 BuildRequires:  gcc-c++
 BuildRequires:	python%{pyver}dist(attrs)
@@ -80,7 +82,7 @@ when you attempt to run it. Mypy is a static checker, so it finds bugs in
 your programs without even running them!
 
 %prep
-%autosetup -n mypy-2.3.0 -p1
+%autosetup -n mypy-%{version} -p1
 # drop bundled egg-info
 rm -rf *.egg-info/
 
